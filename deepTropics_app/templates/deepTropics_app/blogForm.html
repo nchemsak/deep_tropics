@@ -1,0 +1,15 @@
+{% extends 'deepTropics_app/index.html' %} {% block content %}
+<a href="{% url 'deepTropics_app:logout' %}">Log Out</a>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="exampleTextarea">Blog Text:</label>
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+    <label class="custom-file">Upload image:
+      <input type="file" id="file" class="custom-file-input">
+      <span class="custom-file-control"></span>
+    </label>
+  </form>
+</div>
+{% endblock %}

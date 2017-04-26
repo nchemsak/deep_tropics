@@ -15,7 +15,7 @@ class IndexView(TemplateView):
 
 
 class LoginSuccess(LoginRequiredMixin, TemplateView):
-    template_name = 'deepTropics_app/home.html'
+    template_name = 'deepTropics_app/blogForm.html'
 
 
 class Register(TemplateView):
@@ -46,7 +46,7 @@ def login_user(request):
         login(request = request, user = user)
     else:
         return HttpResponseRedirect(redirect_to='/')
-    return HttpResponseRedirect(redirect_to='/success')
+    return HttpResponseRedirect(redirect_to='/blogForm')
 
 
 def logout_user(request):
