@@ -1,0 +1,9 @@
+{% block content %}
+  <h1>Deep Tropics Admin login</h1>
+  <form class="" action="{% url 'deepTropics_app:login' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" value="" placeholder="Username">
+    <input type="password" name="password" value="" placeholder="Password">
+    <button type="submit" name="button">Submit</button>
+  </form>
+{% endblock %}
